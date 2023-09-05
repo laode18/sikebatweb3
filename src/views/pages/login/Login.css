@@ -1,0 +1,58 @@
+  .password-input {
+    position: relative;
+  }
+  
+  .password-input input {
+    width: 88%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 30px; /* to create space for the icon */
+  }
+  
+  .password-icon {
+    color: #a7a5a5;
+    cursor: pointer;
+  }
+
+  .loading-effect {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .loading-spinner {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  
+  .custom-button.animating {
+    animation: buttonAnimation 2s ease-in-out forwards;
+  }
+  
+  @keyframes buttonAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
